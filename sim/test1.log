@@ -1,0 +1,138 @@
+# vsim -cvgperinstance -vopt -voptargs="+acc" -coverage -sva -c -do " log -r /* ;coverage save -onexit mem_cov1;run -all; exit" "+UVM_VERBOSITY=UVM_MEDIUM" -wlf wave_file1.wlf -l test1.log -sv_seed random work.ring_top "+UVM_TESTNAME=ring_test" 
+# Start time: 09:11:35 on Jan 06,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.ring_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.ring_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.ring_top(fast)
+# Loading work.ring_if(fast__2)
+# Loading work.ring_rtl(fast)
+# Loading /home/yash/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 3846900757
+#  log -r /* 
+# coverage save -onexit mem_cov1
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ring_test...
+# UVM_INFO ../test/ring_test.sv(17) @ 0: uvm_test_top [ring_test] In the build_phase of test
+# UVM_INFO ../env/ring_env.sv(18) @ 0: uvm_test_top.envh [ring_env] In build_phase of env
+# UVM_INFO ../agent/ring_agent.sv(19) @ 0: uvm_test_top.envh.agth [ring_agent] This is the build phase of agent
+# UVM_INFO ../agent/ring_driver.sv(19) @ 0: uvm_test_top.envh.agth.drvh [ring_driver] In the build_phase of driver
+# UVM_INFO ../agent/ring_monitor.sv(22) @ 0: uvm_test_top.envh.agth.monh [ring_monitor] In the build phase of monitor
+# UVM_INFO ../agent/ring_agent.sv(27) @ 0: uvm_test_top.envh.agth [ring_agent] In the connect phase of agent
+# UVM_INFO ../env/ring_env.sv(26) @ 0: uvm_test_top.envh [ring_env] In connect_phase of env
+# UVM_INFO ../test/ring_test.sv(23) @ 0: uvm_test_top [ring_test] In the end_of_elaboration_phase of test
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               ring_test               -     @471 
+#   envh                     ring_env                -     @478 
+#     agth                   ring_agent              -     @485 
+#       drvh                 ring_driver             -     @616 
+#         rsp_port           uvm_analysis_port       -     @631 
+#         seq_item_port      uvm_seq_item_pull_port  -     @623 
+#       monh                 ring_monitor            -     @639 
+#         ap                 uvm_analysis_port       -     @646 
+#       seqrh                ring_sequencer          -     @507 
+#         rsp_export         uvm_analysis_export     -     @514 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @608 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     covh                   ring_coverage           -     @492 
+#       analysis_imp         uvm_analysis_imp        -     @499 
+# --------------------------------------------------------------
+# 
+# 
+#### Factory Configuration (*)
+# 
+#   No instance or type overrides are registered with this factory
+# 
+# All types registered with the factory: 50 total
+# (types without type names will not be printed)
+# 
+#   Type Name
+#   ---------
+#   questa_uvm_recorder
+#   ring_agent
+#   ring_coverage
+#   ring_driver
+#   ring_env
+#   ring_monitor
+#   ring_seqs_base
+#   ring_sequencer
+#   ring_test
+#   ring_xtn
+#   rst_high_seqs
+#   rst_low_seqs
+#   verify_ring_counter
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# UVM_INFO ../agent/ring_monitor.sv(29) @ 0: uvm_test_top.envh.agth.monh [ring_monitor] In the run_phase of monitor
+# UVM_INFO ../agent/ring_driver.sv(32) @ 0: uvm_test_top.envh.agth.drvh [ring_driver] In the run phase of driver
+# UVM_INFO ../env/ring_coverage.sv(49) @ 0: uvm_test_top.envh.covh [ring_coverage] Coverage: 0.00%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [UVMTOP]     1
+# [ring_agent]     2
+# [ring_coverage]     1
+# [ring_driver]     2
+# [ring_env]     2
+# [ring_monitor]     2
+# [ring_test]     2
+# ** Note: $finish    : /home/yash/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /ring_top
+# Saving coverage database on exit...
+# End time: 09:11:38 on Jan 06,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

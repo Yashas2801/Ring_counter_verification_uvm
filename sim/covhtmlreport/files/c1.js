@@ -1,0 +1,2 @@
+var g_data = {"12":{"cvpc":[{"h":["RING_VALUE",4,1,13],"cov":[8,8,100.00],"opts":{"goal":"100"}},{"h":["RESET",4,1,14],"cov":[2,2,100.00],"opts":{"goal":"100"}}],"15":{"cvpc":[{"h":["RING_VALUE",4,1,16],"cov":[8,8,100.00],"opts":{"goal":"100"}},{"h":["RESET",4,1,17],"cov":[2,2,100.00],"opts":{"goal":"100"}}],"cvg":["\\/ring_pkg::ring_coverage::cg1 ",2],"cvgdata":[10,10,0,0]},"cvg":["/ring_pkg/ring_coverage/cg1",1],"cvgdata":[10,10,0,0]}};
+processCoverpointsData(g_data);

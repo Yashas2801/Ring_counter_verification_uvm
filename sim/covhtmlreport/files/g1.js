@@ -1,0 +1,2 @@
+var g_data = {"11":{"pr":"/ring_pkg","ty":2,"dui":3,"dun":"work.ring_pkg","cvgs":[{"h":["\\/ring_pkg::ring_coverage::cg1 ",2,1,15,12],"cov":[10,10,100.00],"opts":{"goal":"100","per_instance":"true"}},{"h":["/ring_pkg/ring_coverage/cg1",1,1,12],"cov":[10,10,100.00],"opts":{"goal":"100","merge_instance":"auto(true)"}}]}};
+processCovergroupsData(g_data);
