@@ -1,2 +1,0 @@
-var g_data = {"13":["all_values[1]","all_values[2]","all_values[4]","all_values[8]","all_values[16]","all_values[32]","all_values[64]","all_values[128]"],"14":["rst_high","rst_low"],"16":["all_values[1]","all_values[2]","all_values[4]","all_values[8]","all_values[16]","all_values[32]","all_values[64]","all_values[128]"],"17":["rst_high","rst_low"]};
-processCoverpointsMapData(g_data);

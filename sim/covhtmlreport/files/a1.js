@@ -1,2 +1,0 @@
-var g_data = {"7":{"pr":"/ring_top","ty":2,"dui":5,"dun":"work.ring_top","asserts":[{"n":["NEXT_BIT_HIGH"],"h":[0,1]}],"ad":0},"11":{"pr":"/ring_pkg","ty":2,"dui":3,"dun":"work.ring_pkg","asserts":[{"n":["ring_coverage/check_reset_behavior/#ublk#5071495#30/immed__32"],"h":[0,1]}],"ad":0}}
-processAssertionsData(g_data);
